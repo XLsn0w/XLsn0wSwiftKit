@@ -3,6 +3,8 @@ Pod::Spec.new do |s|
 
   s.version      = "1.0.0"
 
+  s.swift_version = '4.0'
+
   s.name         = "XLsn0wSwiftKit"
   s.homepage     = "https://github.com/XLsn0w/XLsn0wSwiftKit"
   s.source       = { :git => "https://github.com/XLsn0w/XLsn0wSwiftKit.git", :tag => s.version.to_s }
