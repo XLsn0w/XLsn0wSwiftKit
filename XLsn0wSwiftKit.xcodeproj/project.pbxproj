@@ -13,11 +13,9 @@
 		CD385D2120AD863700456D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD385D1F20AD863700456D57 /* Main.storyboard */; };
 		CD385D2320AD863800456D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD385D2220AD863800456D57 /* Assets.xcassets */; };
 		CD385D2620AD863800456D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD385D2420AD863800456D57 /* LaunchScreen.storyboard */; };
-		CD385D7920AD864400456D57 /* XLsn0wKit_swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD385D5620AD864300456D57 /* XLsn0wKit_swift.podspec */; };
-		CD385D8720AD875400456D57 /* SetUIColor+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D7F20AD875400456D57 /* SetUIColor+UIColor.swift */; };
-		CD385D8820AD875400456D57 /* UIImage+wj_Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8220AD875400456D57 /* UIImage+wj_Image.swift */; };
-		CD385D8920AD875400456D57 /* String+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8320AD875400456D57 /* String+Category.swift */; };
-		CD385D8B20AD875400456D57 /* UIView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8520AD875400456D57 /* UIView+ViewController.swift */; };
+		CD385D7920AD864400456D57 /* XLsn0wSwiftKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD385D5620AD864300456D57 /* XLsn0wSwiftKit.podspec */; };
+		CD385D8820AD875400456D57 /* UIImage+QRcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8220AD875400456D57 /* UIImage+QRcode.swift */; };
+		CD385D8920AD875400456D57 /* String+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8320AD875400456D57 /* String+FileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +27,9 @@
 		CD385D2220AD863800456D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD385D2520AD863800456D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD385D2720AD863800456D57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD385D5620AD864300456D57 /* XLsn0wKit_swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wKit_swift.podspec; sourceTree = "<group>"; };
-		CD385D7F20AD875400456D57 /* SetUIColor+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SetUIColor+UIColor.swift"; sourceTree = "<group>"; };
-		CD385D8220AD875400456D57 /* UIImage+wj_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+wj_Image.swift"; sourceTree = "<group>"; };
-		CD385D8320AD875400456D57 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
-		CD385D8520AD875400456D57 /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
+		CD385D5620AD864300456D57 /* XLsn0wSwiftKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wSwiftKit.podspec; sourceTree = "<group>"; };
+		CD385D8220AD875400456D57 /* UIImage+QRcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRcode.swift"; sourceTree = "<group>"; };
+		CD385D8320AD875400456D57 /* String+FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileManager.swift"; sourceTree = "<group>"; };
 		DE4BCC82BC806F8F11D4C420 /* Pods-XLsn0wSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,7 +98,7 @@
 		CD385D2D20AD864300456D57 /* XLsn0wKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD385D5620AD864300456D57 /* XLsn0wKit_swift.podspec */,
+				CD385D5620AD864300456D57 /* XLsn0wSwiftKit.podspec */,
 				CD385D7D20AD875400456D57 /* extension */,
 			);
 			path = XLsn0wKit;
@@ -111,10 +107,8 @@
 		CD385D7D20AD875400456D57 /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				CD385D7F20AD875400456D57 /* SetUIColor+UIColor.swift */,
-				CD385D8220AD875400456D57 /* UIImage+wj_Image.swift */,
-				CD385D8320AD875400456D57 /* String+Category.swift */,
-				CD385D8520AD875400456D57 /* UIView+ViewController.swift */,
+				CD385D8220AD875400456D57 /* UIImage+QRcode.swift */,
+				CD385D8320AD875400456D57 /* String+FileManager.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -181,7 +175,7 @@
 			files = (
 				CD385D2620AD863800456D57 /* LaunchScreen.storyboard in Resources */,
 				CD385D2320AD863800456D57 /* Assets.xcassets in Resources */,
-				CD385D7920AD864400456D57 /* XLsn0wKit_swift.podspec in Resources */,
+				CD385D7920AD864400456D57 /* XLsn0wSwiftKit.podspec in Resources */,
 				CD385D2120AD863700456D57 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,10 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD385D8920AD875400456D57 /* String+Category.swift in Sources */,
-				CD385D8B20AD875400456D57 /* UIView+ViewController.swift in Sources */,
-				CD385D8820AD875400456D57 /* UIImage+wj_Image.swift in Sources */,
-				CD385D8720AD875400456D57 /* SetUIColor+UIColor.swift in Sources */,
+				CD385D8920AD875400456D57 /* String+FileManager.swift in Sources */,
+				CD385D8820AD875400456D57 /* UIImage+QRcode.swift in Sources */,
 				CD385D1E20AD863700456D57 /* ViewController.swift in Sources */,
 				CD385D1C20AD863700456D57 /* AppDelegate.swift in Sources */,
 			);
@@ -393,7 +385,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS6RTU94VW;
 				INFOPLIST_FILE = XLsn0wSwiftKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -409,7 +404,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS6RTU94VW;
 				INFOPLIST_FILE = XLsn0wSwiftKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

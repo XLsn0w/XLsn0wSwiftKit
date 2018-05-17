@@ -1,10 +1,3 @@
-//
-//  UIImage+wj_Image.swift
-//  BQPReader
-//
-//  Created by wsj on 16/7/30.
-//  Copyright © 2016年 BQP. All rights reserved.
-//
 
 import UIKit
 import CoreAudio
@@ -33,14 +26,17 @@ extension UIImage {
     class func  imageWithCode(title:String,height:CGFloat,centerImageName:String,centerImageHeight:CGFloat)->(UIImage) {
         
         let one_image = getCodeCIImage(title: title, height: height);
-        UIGraphicsBeginImageContext(CGSizeMake(height, height));
-        one_image.drawInRect(CGRectMake(0, 0, height, height));
+        UIGraphicsBeginImageContext(CGSize(width: height, height: height));
+        one_image.draw(in: CGRect(x: 0, y: 0, width: height, height: height));
         let centerX = (height-centerImageHeight)/2;
-        UIImage(named: centerImageName)?.drawInRect(CGRectMake(centerX, centerX, centerImageHeight, centerImageHeight));
+     
+        UIImage(named: centerImageName)?.draw(in: CGRect(x: centerX, y: centerX, width: centerImageHeight, height: centerImageHeight));
+ 
         let newImage = UIGraphicsGetImageFromCurrentImageContext();
         
         UIGraphicsEndImageContext();
-        return newImage;
+        
+        return newImage!;
     }
     /**
      带有边框和中间图片的二维码
@@ -56,50 +52,53 @@ extension UIImage {
      */
     class func imageWithCode(title:String,height:CGFloat,borderImageName:String,borderHeight:CGFloat, centerImageName:String,centerImageHeight:CGFloat)->(UIImage) {
         
-        let one_image = getCodeCIImage(title, height: height);
+        let one_image = getCodeCIImage(title: title, height: height);
         
-        UIGraphicsBeginImageContext(CGSizeMake(borderHeight, borderHeight));
-        UIImage(named:borderImageName)!.drawInRect(CGRectMake(0, 0, borderHeight, borderHeight));
+        UIGraphicsBeginImageContext(CGSize(width: borderHeight, height: borderHeight));
+        UIImage(named:borderImageName)!.draw(in: CGRect(x: 0, y: 0, width: borderHeight, height: borderHeight));
         let codeX = (borderHeight-height)/2;
-        one_image.drawInRect(CGRectMake(codeX, codeX, height, height));
+        one_image.draw(in: CGRect(x: codeX, y: codeX, width: height, height: height));
         
         let centerX = (borderHeight-centerImageHeight)/2;
-        UIImage(named: centerImageName)?.drawInRect(CGRectMake(centerX, centerX, centerImageHeight, centerImageHeight));
+        UIImage(named: centerImageName)?.draw(in: CGRect(x: centerX, y: centerX, width: centerImageHeight, height: centerImageHeight));
+    
         let newImage = UIGraphicsGetImageFromCurrentImageContext();
         
         UIGraphicsEndImageContext();
-        return newImage;
+        return newImage!;
     }
+    
+    
     class func getCodeCIImage(title:String,height:CGFloat)->(UIImage){
         
         let file = CIFilter(name: "CIQRCodeGenerator");// 二维码过滤器
         file?.setDefaults();
-        file?.setValue(title.dataUsingEncoding(4), forKeyPath: "inputMessage");
+        file?.setValue(title.data(using: String.Encoding(rawValue: 4)), forKeyPath: "inputMessage");
         
-        let  onColor = UIColor.blackColor().CGColor;// 绘制的颜色
-        let offColor = UIColor.whiteColor().CGColor;// 空白的颜色
+        let  onColor = UIColor.black.cgColor;// 绘制的颜色
+        let offColor = UIColor.white.cgColor;// 空白的颜色
         let colorFile = CIFilter(name: "CIFalseColor");// 创建一个黑白过滤器
         colorFile!.setDefaults();
         colorFile?.setValue(file!.outputImage, forKey: "inputImage");
-        colorFile?.setValue(CIColor(CGColor: onColor), forKey: "inputColor0");// 上颜色
-        colorFile?.setValue(CIColor(CGColor: offColor), forKey: "inputColor1");// 上颜色
+        colorFile?.setValue(CIColor(cgColor: onColor), forKey: "inputColor0");// 上颜色
+        colorFile?.setValue(CIColor(cgColor: offColor), forKey: "inputColor1");// 上颜色
         let CIimage = colorFile!.outputImage;// 取出图片
         
-        let cgImage = CIContext(options: nil).createCGImage(CIimage!, fromRect: CIimage!.extent);
+        let cgImage = CIContext(options: nil).createCGImage(CIimage!, from: CIimage!.extent);
         
-        UIGraphicsBeginImageContext(CGSizeMake(height, height));
+        UIGraphicsBeginImageContext(CGSize(width: height, height: height));
         
-         let context = UIGraphicsGetCurrentContext();
-        CGContextSetInterpolationQuality(context, CGInterpolationQuality.None);
-        CGContextScaleCTM(context, 1.0, -1.0);
-        CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage);
+        
+//        let context = UIGraphicsGetCurrentContext();
+//        CGContextSetInterpolationQuality(context!, CGInterpolationQuality.none);
+//        CGContextScaleCTM(context!, 1.0, -1.0);
+//        CGContextDrawImage(context, CGContextGetClipBoundingBox(context!), cgImage);
         let codeImage = UIGraphicsGetImageFromCurrentImageContext();
-        UIGraphicsEndImageContext();
-        
-//        CGImageRelease(cgImage);
+//        UIGraphicsEndImageContext();
+//        CGImageRelease(cgImage!);
         
 
-        return codeImage;
+        return codeImage!;
 
     }
 }

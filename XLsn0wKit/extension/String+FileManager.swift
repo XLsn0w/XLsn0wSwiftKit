@@ -1,10 +1,4 @@
-//
-//  String+Categaty.swift
-//  单例
-//
-//  Created by w s j on 16/6/5.
-//  Copyright © 2016年 w s j. All rights reserved.
-//  快速创建沙盒路径的分类
+
 import UIKit
 
 extension String{
@@ -18,13 +12,13 @@ extension String{
          last! 必须要值
          as NSString转化为NSString类型才可以拼接路径
         */
-        let path = NSSearchPathForDirectoriesInDomains( NSSearchPathDirectory.CachesDirectory, NSSearchPathDomainMask
-            .UserDomainMask, true).last! as NSString
+        let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.cachesDirectory, FileManager.SearchPathDomainMask
+            .userDomainMask, true).last! as NSString
         /*(self as NSString).lastPathComponent
           self as NSString 将调用方法的string类型转化为NSString类型
           lastPathComponent为最后一个拼接的字符串  例如http://www.baidu.com/wj.jgp截取为wj.jpg
         */
-        let filePath = path.stringByAppendingPathComponent((self as NSString).lastPathComponent)
+        let filePath = path.appendingPathComponent((self as NSString).lastPathComponent)
         
         return filePath;
         
@@ -36,8 +30,8 @@ extension String{
     */
     public func documentDir()->String{
         
-        let path = NSSearchPathForDirectoriesInDomains( NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).last! as NSString
-        let filePath = path.stringByAppendingPathComponent((self as NSString).lastPathComponent)
+        let path = NSSearchPathForDirectoriesInDomains( FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true).last! as NSString
+        let filePath = path.appendingPathComponent((self as NSString).lastPathComponent)
         return filePath
     }
     /**
@@ -47,7 +41,7 @@ extension String{
     */
     public func temDir ()->String{
         let path = NSTemporaryDirectory() as NSString
-        let filePath = path.stringByAppendingPathComponent((self as NSString).lastPathComponent)
+        let filePath = path.appendingPathComponent((self as NSString).lastPathComponent)
         return filePath
     }
 }
