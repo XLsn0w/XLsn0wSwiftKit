@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71F4BFC761897F3861216E2F /* Pods_XLsn0wSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */; };
 		CD385D1C20AD863700456D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D1B20AD863700456D57 /* AppDelegate.swift */; };
 		CD385D1E20AD863700456D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D1D20AD863700456D57 /* ViewController.swift */; };
 		CD385D2120AD863700456D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD385D1F20AD863700456D57 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		860DC49B0A9A0551213B5B07 /* Pods-XLsn0wSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
 		CD385D1820AD863700456D57 /* XLsn0wSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD385D1B20AD863700456D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD385D1D20AD863700456D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		CD385D8220AD875400456D57 /* UIImage+wj_Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+wj_Image.swift"; sourceTree = "<group>"; };
 		CD385D8320AD875400456D57 /* String+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Category.swift"; sourceTree = "<group>"; };
 		CD385D8520AD875400456D57 /* UIView+ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ViewController.swift"; sourceTree = "<group>"; };
+		DE4BCC82BC806F8F11D4C420 /* Pods-XLsn0wSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F4BFC761897F3861216E2F /* Pods_XLsn0wSwiftKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E90693EE6106CEBF62CED88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE4BCC82BC806F8F11D4C420 /* Pods-XLsn0wSwiftKit.debug.xcconfig */,
+				860DC49B0A9A0551213B5B07 /* Pods-XLsn0wSwiftKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C17255557DF99F7C923F639D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD385D0F20AD863700456D57 = {
 			isa = PBXGroup;
 			children = (
 				CD385D2D20AD864300456D57 /* XLsn0wKit */,
 				CD385D1A20AD863700456D57 /* XLsn0wSwiftKit */,
 				CD385D1920AD863700456D57 /* Products */,
+				1E90693EE6106CEBF62CED88 /* Pods */,
+				C17255557DF99F7C923F639D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD385D2A20AD863800456D57 /* Build configuration list for PBXNativeTarget "XLsn0wSwiftKit" */;
 			buildPhases = (
+				2A047B93BEAEA7469E061707 /* [CP] Check Pods Manifest.lock */,
 				CD385D1420AD863700456D57 /* Sources */,
 				CD385D1520AD863700456D57 /* Frameworks */,
 				CD385D1620AD863700456D57 /* Resources */,
+				9DB48D74BDCC257BFB879A20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,6 +187,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A047B93BEAEA7469E061707 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XLsn0wSwiftKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DB48D74BDCC257BFB879A20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD385D1420AD863700456D57 /* Sources */ = {
@@ -314,15 +387,13 @@
 		};
 		CD385D2B20AD863800456D57 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE4BCC82BC806F8F11D4C420 /* Pods-XLsn0wSwiftKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS6RTU94VW;
 				INFOPLIST_FILE = XLsn0wSwiftKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -332,15 +403,13 @@
 		};
 		CD385D2C20AD863800456D57 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 860DC49B0A9A0551213B5B07 /* Pods-XLsn0wSwiftKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS6RTU94VW;
 				INFOPLIST_FILE = XLsn0wSwiftKit/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ginlong.XLsn0wSwiftKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

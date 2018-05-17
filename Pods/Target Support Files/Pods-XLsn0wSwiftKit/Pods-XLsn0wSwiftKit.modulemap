@@ -1,0 +1,6 @@
+framework module Pods_XLsn0wSwiftKit {
+  umbrella header "Pods-XLsn0wSwiftKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
