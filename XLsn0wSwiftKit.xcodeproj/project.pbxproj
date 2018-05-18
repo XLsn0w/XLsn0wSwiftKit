@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		71F4BFC761897F3861216E2F /* Pods_XLsn0wSwiftKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */; };
-		CD385D1C20AD863700456D57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D1B20AD863700456D57 /* AppDelegate.swift */; };
-		CD385D1E20AD863700456D57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D1D20AD863700456D57 /* ViewController.swift */; };
 		CD385D2120AD863700456D57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD385D1F20AD863700456D57 /* Main.storyboard */; };
 		CD385D2320AD863800456D57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD385D2220AD863800456D57 /* Assets.xcassets */; };
 		CD385D2620AD863800456D57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD385D2420AD863800456D57 /* LaunchScreen.storyboard */; };
 		CD385D7920AD864400456D57 /* XLsn0wSwiftKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CD385D5620AD864300456D57 /* XLsn0wSwiftKit.podspec */; };
 		CD385D8820AD875400456D57 /* UIImage+QRcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8220AD875400456D57 /* UIImage+QRcode.swift */; };
 		CD385D8920AD875400456D57 /* String+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD385D8320AD875400456D57 /* String+FileManager.swift */; };
+		CD65DAB920AEA32A000994E5 /* Date+NowTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DAB420AEA329000994E5 /* Date+NowTime.swift */; };
+		CD65DABA20AEA32A000994E5 /* String+Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DAB520AEA32A000994E5 /* String+Attributes.swift */; };
+		CD65DABC20AEA32A000994E5 /* Data+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DAB720AEA32A000994E5 /* Data+HexString.swift */; };
+		CD65DABD20AEA32A000994E5 /* UNNotificationAction+AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DAB820AEA32A000994E5 /* UNNotificationAction+AddAction.swift */; };
+		CD65DABF20AEA342000994E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DABE20AEA342000994E5 /* AppDelegate.swift */; };
+		CD65DAC120AEA366000994E5 /* UNNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD65DAC020AEA366000994E5 /* UNNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		860DC49B0A9A0551213B5B07 /* Pods-XLsn0wSwiftKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wSwiftKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit.release.xcconfig"; sourceTree = "<group>"; };
 		CD385D1820AD863700456D57 /* XLsn0wSwiftKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0wSwiftKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD385D1B20AD863700456D57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD385D1D20AD863700456D57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD385D2020AD863700456D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD385D2220AD863800456D57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD385D2520AD863800456D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,12 @@
 		CD385D5620AD864300456D57 /* XLsn0wSwiftKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0wSwiftKit.podspec; sourceTree = "<group>"; };
 		CD385D8220AD875400456D57 /* UIImage+QRcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+QRcode.swift"; sourceTree = "<group>"; };
 		CD385D8320AD875400456D57 /* String+FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FileManager.swift"; sourceTree = "<group>"; };
+		CD65DAB420AEA329000994E5 /* Date+NowTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+NowTime.swift"; sourceTree = "<group>"; };
+		CD65DAB520AEA32A000994E5 /* String+Attributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Attributes.swift"; sourceTree = "<group>"; };
+		CD65DAB720AEA32A000994E5 /* Data+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+HexString.swift"; sourceTree = "<group>"; };
+		CD65DAB820AEA32A000994E5 /* UNNotificationAction+AddAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UNNotificationAction+AddAction.swift"; sourceTree = "<group>"; };
+		CD65DABE20AEA342000994E5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD65DAC020AEA366000994E5 /* UNNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNNotificationViewController.swift; sourceTree = "<group>"; };
 		DE4BCC82BC806F8F11D4C420 /* Pods-XLsn0wSwiftKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0wSwiftKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0wSwiftKit/Pods-XLsn0wSwiftKit.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6A747A332DF58FAC99642D /* Pods_XLsn0wSwiftKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLsn0wSwiftKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -85,8 +93,8 @@
 		CD385D1A20AD863700456D57 /* XLsn0wSwiftKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD385D1B20AD863700456D57 /* AppDelegate.swift */,
-				CD385D1D20AD863700456D57 /* ViewController.swift */,
+				CD65DABE20AEA342000994E5 /* AppDelegate.swift */,
+				CD65DAC020AEA366000994E5 /* UNNotificationViewController.swift */,
 				CD385D1F20AD863700456D57 /* Main.storyboard */,
 				CD385D2220AD863800456D57 /* Assets.xcassets */,
 				CD385D2420AD863800456D57 /* LaunchScreen.storyboard */,
@@ -107,8 +115,12 @@
 		CD385D7D20AD875400456D57 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				CD65DAB820AEA32A000994E5 /* UNNotificationAction+AddAction.swift */,
 				CD385D8220AD875400456D57 /* UIImage+QRcode.swift */,
+				CD65DAB520AEA32A000994E5 /* String+Attributes.swift */,
 				CD385D8320AD875400456D57 /* String+FileManager.swift */,
+				CD65DAB420AEA329000994E5 /* Date+NowTime.swift */,
+				CD65DAB720AEA32A000994E5 /* Data+HexString.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -234,10 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD65DAC120AEA366000994E5 /* UNNotificationViewController.swift in Sources */,
 				CD385D8920AD875400456D57 /* String+FileManager.swift in Sources */,
+				CD65DAB920AEA32A000994E5 /* Date+NowTime.swift in Sources */,
 				CD385D8820AD875400456D57 /* UIImage+QRcode.swift in Sources */,
-				CD385D1E20AD863700456D57 /* ViewController.swift in Sources */,
-				CD385D1C20AD863700456D57 /* AppDelegate.swift in Sources */,
+				CD65DABF20AEA342000994E5 /* AppDelegate.swift in Sources */,
+				CD65DABD20AEA32A000994E5 /* UNNotificationAction+AddAction.swift in Sources */,
+				CD65DABA20AEA32A000994E5 /* String+Attributes.swift in Sources */,
+				CD65DABC20AEA32A000994E5 /* Data+HexString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
